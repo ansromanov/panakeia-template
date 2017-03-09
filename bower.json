@@ -1,0 +1,24 @@
+{
+  "name": "innosphere_template",
+  "description": "innnosphere template",
+  "main": "main.js",
+  "authors": [
+    "ansro (ansromanov@gmail.com)"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "font-awesome": "fontawesome#^4.7.0",
+    "normalize-css": "^5.0.0",
+    "bootstrap": "^3.3.7"
+  }
+}
