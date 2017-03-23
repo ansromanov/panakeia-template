@@ -1,192 +1,193 @@
 <!DOCTYPE html>
 html(lang="en")
-head
-  meta(charset="UTF-8")
-  //- meta(name="viewport", content="width=device-width, initial-scale=1.0")
-  //- meta(http-equiv="X-UA-Compatible", content="ie=edge")
-  title Panakeia
+  head
+    meta(charset="UTF-8")
+    //- meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    //- meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title Panakeia
 
-  // normalize.css
-  // link(rel='stylesheet', type='text/css', href='components/normalize-css/normalize.css')
+    // normalize.css
+    // link(rel='stylesheet', type='text/css', href='components/normalize-css/normalize.css')
 
-  // Bootstrap
-  link(href="components/bootstrap/css/bootstrap.min.css", rel="stylesheet")
+    // Bootstrap
+    link(href="components/bootstrap/css/bootstrap.min.css", rel="stylesheet")
 
-  // HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
-  // WARNING: Respond.js doesn't work if you view the page via file://
-  //if lt IE 9
-    script(src='https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js')
-    script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+    // HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js')
+      script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
 
-  // google fonts
-  link(href='https://fonts.googleapis.com/css?family=Montserrat:100|Roboto+Slab:300,400|Roboto:300,400,700', rel='stylesheet')
+    // google fonts
+    link(href='https://fonts.googleapis.com/css?family=Montserrat:100%7cRoboto+Slab:300,400%7cRoboto:300,400,700', rel='stylesheet')
 
-  // font awesome
-  link(rel='stylesheet', href='components/font-awesome/css/font-awesome.min.css')
+    // font awesome
+    link(rel='stylesheet', href='components/font-awesome/css/font-awesome.min.css')
 
-  // main styles
-  link(rel='stylesheet', type='text/css', href='css/style.css')
+    // main styles
+    link(rel='stylesheet', type='text/css', href='css/style.css')
 
-body(data-spy="scroll" data-target=".site-nav" data-offset="100")
-  header.header
-    nav.navbar.navbar-default.navbar-fixed-top.site-nav
-      .container-fluid
-        .navbar-header
-          button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-main-navbar-collapse', aria-expanded='false')
-            span.sr-only Toggle navigation
-            span.icon-bar
-            span.icon-bar
-            span.icon-bar
-          a.navbar-text.site-nav__logo(href='#site-newsletter')
-              h2.site-nav__title Panakeia
-              p.site-nav__logo-comment Free PSD template
-        .collapse.navbar-collapse#bs-main-navbar-collapse
-          ul.nav.navbar-nav.navbar-right.site-navlist(role="tablist")
-            li.site-navlist__item
-              a.active.site-navlist__item-link(href='#site-promo') Fusce at
-            li.site-navlist__item
-              a.site-navlist__item-link(href='#site-news') Facilisis
-            li.site-navlist__item
-              a.site-navlist__item-link(href='#site-newsletter') Ante donec
-            li.site-navlist__item
-              a.site-navlist__item-link(href='#site-goods') Blandit rhoncus
-            li.site-navlist__item
-              a.site-navlist__item-link(href='#site-links') Placerat
-  section.jumbotron.text-center.promo#site-promo
-    .container-fluid
-      h1.promo__header Integer at tortor ut magna
-      h2.promo__header-bottom finibus lobortis sed quis tellus.
-      .row
-        .col-lg-4
-          article.promo-block
-            img.promo-block__image(src="images/promo-img1.png", alt="promo-image-1")
-            h3.promo-block__header Tincidunt
-            p.promo-block__description Phasellus arcu justo, ullamcorper non diam sit amet, luctus condimentum metus. Nullam tempus egestas efficitur. Sed quam dolor.
-        .col-lg-4
-          article.promo-block
-            img.promo-block__image(src="images/promo-img2.png", alt="promo-image-2")
-            h3.promo-block__header Duis bibendum
-            p.promo-block__description Ut arcu arcu, faucibus eu risus blandit, pulvinar viverra justo. Phasellus arcu justo, ullamcorper non diam sit amet, luctus condimentum metus. In hac habitasse platea dictumst.
-        .col-lg-4
-          article.promo-block
-            img.promo-block__image(src="images/promo-img3.png", alt="promo-image-3")
-            h3.promo-block__header Donec ligula
-            p.promo-block__description Nullam tempus egestas efficitur. Sed quam dolor, vulputate sed mattis et, sodales quis orci. Ut arcu arcu, faucibus eu risus blandit,.
-      button.btn.btn-default.btn-lg.main-button.promo__main-button(type='button') Read more
-  section.news#site-news
-    .container-fluid
-      h3.news__header Our news
-      .row
-        .col-lg-4
-          article.news-block
-            img.news-block__image(src="images/news-img1.png", alt="news-image-1")
-            h3.news-block__header Lorem ipsum
-            p.news-block__description Est a elit scelerisque vestibulum. Donec est sem, lobortis sit amet imperdiet vel, pretium lobortis erat. Nulla vitae hendrerit odio..
-            button.btn.btn-default.main-button.news-block__main-button(type='button') Read more
-        .col-lg-4
-          article.news-block
-            img.news-block__image(src="images/news-img2.png", alt="news-image-2")
-            h3.news-block__header Lorem ipsum
-            p.news-block__description Est a elit scelerisque vestibulum. Donec est sem, lobortis sit amet imperdiet vel, pretium lobortis erat. Nulla vitae hendrerit odio.
-            button.btn.btn-default.main-button.news-block__main-button(type='button') Read more
-        .col-lg-4
-          article.news-block
-            img.news-block__image(src="images/news-img3.png", alt="news-image-3")
-            h3.news-block__header Lorem ipsum
-            p.news-block__description Est a elit scelerisque vestibulum. Donec est sem, lobortis sit amet imperdiet vel, pretium lobortis erat. Nulla vitae hendrerit odio.
-            button.btn.btn-default.main-button.news-block__main-button(type='button') Read more
-  section.text-center.newsletter#site-newsletter
-    .container-fluid
-      .col-lg-6.col-lg-offset-3
-        h3.newsletter__header Newsletter
-        p.newsletter__text Ut arcu arcu, faucibus eu risus blandit, pulvinar viverra justo. Phasellus arcu justo, ullamcorper non diam sit amet, luctus condimentum metus
-        form.signup-form(action="" method="post" )
-          .form-group.text-center
-            input.signup-form__email(type="email" placeholder="email address" aria-describedby="basic-addon2" required)
-            //- span.input-group-btn.signup-form__submit
-            button.btn.btn-default.main-button.signup-form__main-button(type="submit") Sign up
-  section.goods#site-goods
-    .container-fluid
-      article.goods-block
-        .row
-          .col-lg-6
-            h3.goods-block__header Ipsum dolor sit amet
-            p.goods-block__paragraph Nam accumsan nunc sit amet elementum sollicitudin. Integer vel lacus eget tortor lobortis tincidunt sed eu dolor. Phasellus cursus augue ac pulvinar cursus.
-            p.goods-block__paragraph Quisque ut erat ornare, feugiat turpis a, fringilla felis. Nulla molestie lorem et orci sagittis, et accumsan ex porta.
-            button.btn.btn-default.main-button.goods-block__main-button(type='button') Read more
-          .col-lg-6
-            aside.goods-block__image
-            img.goods-block__image(src="images/goods-img2.png", alt="goods-image-2")
-      article.goods-block
-        .row
-          .col-lg-6
-            aside.goods-block__image
-              img.goods-block__image(src="images/goods-img2.png", alt="goods-image-2")
-          .col-lg-6
-            h3.goods-block__header Ipsum dolor sit amet
-            p.goods-block__paragraph Nam accumsan nunc sit amet elementum sollicitudin. Integer vel lacus eget tortor lobortis tincidunt sed eu dolor. Phasellus cursus augue ac pulvinar cursus.
-            p.goods-block__paragraph Quisque ut erat ornare, feugiat turpis a, fringilla felis. Nulla molestie lorem et orci sagittis, et accumsan ex porta.
-            button.btn.btn-default.main-button.goods-block__main-button.goods-block__main-button_blue(type='button') Read more
-  section.links#site-links
-    .container-fluid
-      .row
-        .col-lg-4
-          nav.links-block
-            ul
-              li.links-block__item
-                a.links-block__item-link(href="#") Ad litora torquent
-              li.links-block__item
-                a.links-block__item-link(href="#") Per conubia
-              li.links-block__item
-                a.links-block__item-link(href="#") Nostra
-              li.links-block__item
-                a.links-block__item-link(href="#") Per inceptos
-              li.links-block__item
-                a.links-block__item-link(href="#") Himenaeos
-              li.links-block__item
-                a.links-block__item-link(href="#") In consectetur
-        .col-lg-4
-          nav.links-block
-            ul
-              li.links-block__item
-                a.links-block__item-link(href="#") Taciti sociosqu
-              li.links-block__item
-                a.links-block__item-link(href="#") Ad litora torquent
-              li.links-block__item
-                a.links-block__item-link(href="#") Per conubia
-              li.links-block__item
-                a.links-block__item-link(href="#") Himenaeos
-              li.links-block__item
-                a.links-block__item-link(href="#") In consectetur
-              li.links-block__item
-                a.links-block__item-link(href="#") Nisi sed blandit
-              li.links-block__item
-                a.links-block__item-link(href="#") Tincidunt
-        .col-lg-4
-          nav.links-block
-            ul
-              li.links-block__item
-                a.links-block__item-link(href="#") Nostra
-              li.links-block__item
-                a.links-block__item-link(href="#") Per inceptos
-              li.links-block__item
-                a.links-block__item-link(href="#") Himenaeos
-              li.links-block__item
-                a.links-block__item-link(href="#") In consectetur
-              li.links-block__item
-                a.links-block__item-link(href="#") Nisi sed blandit
-              li.links-block__item
-                a.links-block__item-link(href="#") Tincidunt
+  body(data-spy="scroll" data-target=".site-nav" data-offset="100")
+    .site-wrapper
+      header.header
+        nav.navbar.navbar-default.navbar-fixed-top.site-nav
+          .container-fluid
+            .navbar-header
+              button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-main-navbar-collapse', aria-expanded='false')
+                span.sr-only Toggle navigation
+                span.icon-bar
+                span.icon-bar
+                span.icon-bar
+              a.navbar-text.site-nav__logo(href='#site-promo')
+                  h2.site-nav__title Panakeia
+                  p.site-nav__logo-comment Free PSD template
+            .collapse.navbar-collapse#bs-main-navbar-collapse
+              ul.nav.navbar-nav.navbar-right.site-navlist(role="tablist")
+                li.site-navlist__item
+                  a.active.site-navlist__item-link(href='#site-promo') Fusce at
+                li.site-navlist__item
+                  a.site-navlist__item-link(href='#site-news') Facilisis
+                li.site-navlist__item
+                  a.site-navlist__item-link(href='#site-newsletter') Ante donec
+                li.site-navlist__item
+                  a.site-navlist__item-link(href='#site-goods') Blandit rhoncus
+                li.site-navlist__item
+                  a.site-navlist__item-link(href='#site-links') Placerat
+      section.jumbotron.text-center.promo#site-promo
+        .container-fluid
+          h1.promo__header Integer at tortor ut magna
+          h2.promo__header-bottom finibus lobortis sed quis tellus.
+          .row
+            .col-lg-4
+              article.promo-block
+                img.promo-block__image(src="images/promo-img1.png", alt="promo-image-1")
+                h3.promo-block__header Tincidunt
+                p.promo-block__description Phasellus arcu justo, ullamcorper non diam sit amet, luctus condimentum metus. Nullam tempus egestas efficitur. Sed quam dolor.
+            .col-lg-4
+              article.promo-block
+                img.promo-block__image(src="images/promo-img2.png", alt="promo-image-2")
+                h3.promo-block__header Duis bibendum
+                p.promo-block__description Ut arcu arcu, faucibus eu risus blandit, pulvinar viverra justo. Phasellus arcu justo, ullamcorper non diam sit amet, luctus condimentum metus. In hac habitasse platea dictumst.
+            .col-lg-4
+              article.promo-block
+                img.promo-block__image(src="images/promo-img3.png", alt="promo-image-3")
+                h3.promo-block__header Donec ligula
+                p.promo-block__description Nullam tempus egestas efficitur. Sed quam dolor, vulputate sed mattis et, sodales quis orci. Ut arcu arcu, faucibus eu risus blandit,.
+          button.btn.btn-default.btn-lg.main-button.promo__main-button(type='button') Read more
+      section.news#site-news
+        .container-fluid
+          h3.news__header Our news
+          .row
+            .col-lg-4
+              article.news-block
+                img.news-block__image(src="images/news-img1.png", alt="news-image-1")
+                h3.news-block__header Lorem ipsum
+                p.news-block__description Est a elit scelerisque vestibulum. Donec est sem, lobortis sit amet imperdiet vel, pretium lobortis erat. Nulla vitae hendrerit odio..
+                button.btn.btn-default.main-button.news-block__main-button(type='button') Read more
+            .col-lg-4
+              article.news-block
+                img.news-block__image(src="images/news-img2.png", alt="news-image-2")
+                h3.news-block__header Lorem ipsum
+                p.news-block__description Est a elit scelerisque vestibulum. Donec est sem, lobortis sit amet imperdiet vel, pretium lobortis erat. Nulla vitae hendrerit odio.
+                button.btn.btn-default.main-button.news-block__main-button(type='button') Read more
+            .col-lg-4
+              article.news-block
+                img.news-block__image(src="images/news-img3.png", alt="news-image-3")
+                h3.news-block__header Lorem ipsum
+                p.news-block__description Est a elit scelerisque vestibulum. Donec est sem, lobortis sit amet imperdiet vel, pretium lobortis erat. Nulla vitae hendrerit odio.
+                button.btn.btn-default.main-button.news-block__main-button(type='button') Read more
+      section.text-center.newsletter#site-newsletter
+        .container-fluid
+          .col-lg-6.col-lg-offset-3
+            h3.newsletter__header#aria-newsletter__header Newsletter
+            p.newsletter__text Ut arcu arcu, faucibus eu risus blandit, pulvinar viverra justo. Phasellus arcu justo, ullamcorper non diam sit amet, luctus condimentum metus
+            form.signup-form(action="form.php" method="post" )
+              .form-group.text-center
+                input.signup-form__email(type="email" placeholder="email address" aria-describedby="aria-newsletter__header" required)
+                //- span.input-group-btn.signup-form__submit
+                button.btn.btn-default.main-button.signup-form__main-button(type="submit") Sign up
+      section.goods#site-goods
+        .container-fluid
+          article.goods-block
+            .row
+              .col-lg-6
+                h3.goods-block__header Ipsum dolor sit amet
+                p.goods-block__paragraph Nam accumsan nunc sit amet elementum sollicitudin. Integer vel lacus eget tortor lobortis tincidunt sed eu dolor. Phasellus cursus augue ac pulvinar cursus.
+                p.goods-block__paragraph Quisque ut erat ornare, feugiat turpis a, fringilla felis. Nulla molestie lorem et orci sagittis, et accumsan ex porta.
+                button.btn.btn-default.main-button.goods-block__main-button(type='button') Read more
+              .col-lg-6
+                aside.goods-block__image
+                img.goods-block__image(src="images/goods-img2.png", alt="goods-image-2")
+          article.goods-block
+            .row
+              .col-lg-6
+                aside.goods-block__image
+                  img.goods-block__image(src="images/goods-img2.png", alt="goods-image-2")
+              .col-lg-6
+                h3.goods-block__header Ipsum dolor sit amet
+                p.goods-block__paragraph Nam accumsan nunc sit amet elementum sollicitudin. Integer vel lacus eget tortor lobortis tincidunt sed eu dolor. Phasellus cursus augue ac pulvinar cursus.
+                p.goods-block__paragraph Quisque ut erat ornare, feugiat turpis a, fringilla felis. Nulla molestie lorem et orci sagittis, et accumsan ex porta.
+                button.btn.btn-default.main-button.goods-block__main-button.goods-block__main-button_blue(type='button') Read more
+      section.links#site-links
+        .container-fluid
+          .row
+            .col-lg-4
+              nav.links-block
+                ul
+                  li.links-block__item
+                    a.links-block__item-link(href="#") Ad litora torquent
+                  li.links-block__item
+                    a.links-block__item-link(href="#") Per conubia
+                  li.links-block__item
+                    a.links-block__item-link(href="#") Nostra
+                  li.links-block__item
+                    a.links-block__item-link(href="#") Per inceptos
+                  li.links-block__item
+                    a.links-block__item-link(href="#") Himenaeos
+                  li.links-block__item
+                    a.links-block__item-link(href="#") In consectetur
+            .col-lg-4
+              nav.links-block
+                ul
+                  li.links-block__item
+                    a.links-block__item-link(href="#") Taciti sociosqu
+                  li.links-block__item
+                    a.links-block__item-link(href="#") Ad litora torquent
+                  li.links-block__item
+                    a.links-block__item-link(href="#") Per conubia
+                  li.links-block__item
+                    a.links-block__item-link(href="#") Himenaeos
+                  li.links-block__item
+                    a.links-block__item-link(href="#") In consectetur
+                  li.links-block__item
+                    a.links-block__item-link(href="#") Nisi sed blandit
+                  li.links-block__item
+                    a.links-block__item-link(href="#") Tincidunt
+            .col-lg-4
+              nav.links-block
+                ul
+                  li.links-block__item
+                    a.links-block__item-link(href="#") Nostra
+                  li.links-block__item
+                    a.links-block__item-link(href="#") Per inceptos
+                  li.links-block__item
+                    a.links-block__item-link(href="#") Himenaeos
+                  li.links-block__item
+                    a.links-block__item-link(href="#") In consectetur
+                  li.links-block__item
+                    a.links-block__item-link(href="#") Nisi sed blandit
+                  li.links-block__item
+                    a.links-block__item-link(href="#") Tincidunt
 
-  footer.footer
+    footer.footer
       p.footer__paragraph Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.<br>
         |Try awsome tool for desgners 
         strong symu.co
-  // jQuery
-  script(src="components/jquery/jquery.min.js")
+    // jQuery
+    script(src="components/jquery/jquery.min.js")
 
-  // Include all compiled plugins (below), or include individual files as needed
-  script(src='components/bootstrap/js/bootstrap.min.js')
+    // Include all compiled plugins (below), or include individual files as needed
+    script(src='components/bootstrap/js/bootstrap.min.js')
 
-  script(src='./js/nav_slide.js')
+    script(src='./js/nav_slide.js')
 
