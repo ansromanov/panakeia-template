@@ -89,8 +89,8 @@ a:visited {
   transition: background-color 0.3s; }
 
 .promo {
-  background-color: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 50% 70% no-repeat;
-  background-color: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 50% 70% no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
   background-image: url("../images/photo-1416453072034-c8dbfa2856b5.png");
   background-position: 50% 70%;
   background-repeat: no-repeat;
@@ -169,8 +169,8 @@ a:visited {
 
 .newsletter {
   padding: 66px 0 90px;
-  background-color: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 50% 70% no-repeat;
-  background-color: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 50% 70% no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
   background-image: url("../images/photo-1428660386617-8d277e7deaf2.png");
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -301,8 +301,11 @@ a:visited {
 .footer {
   height: 375px;
   padding: 84px 0 232px;
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/photo-1428660386617-8d277e7deaf2.png") 50% 50% no-repeat;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/photo-1428660386617-8d277e7deaf2.png") 50% 50% no-repeat;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 50% 70% no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  background-image: url("../images/photo-1428660386617-8d277e7deaf2.png");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
   background-size: cover; }
 
 .footer__paragraph {
