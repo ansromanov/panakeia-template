@@ -18,7 +18,7 @@ body {
   font-family: $roboto-slab;
   text-align: center;
 }
-  
+
 a,
 a:hover,
 a:active,
@@ -53,8 +53,10 @@ a:visited {
   font-size: 18px;
   font-weight: 400;
   line-height: 1.6;
-  transition-property: background-color, border-color, color;
-  transition-duration: 0.2s;
+  -webkit-transition-property: background-color, border-color, color;
+          transition-property: background-color, border-color, color;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
   &:hover {
     background-color: #dd4b2b;
     border-color: #d75d0e;
@@ -94,7 +96,8 @@ a:visited {
   font-weight: 400;
   color: #31353e !important;
   border-radius: 2em;
-  transition: background-color 0s;
+  -webkit-transition: background-color 0s;
+          transition: background-color 0s;
   &:hover {
     color: #dd4b2b !important;
   }
@@ -105,11 +108,13 @@ a:visited {
 .navbar-default .navbar-nav>.active>a:hover {
   color: #edeff1 !important;
   background-color: #dd4b2b !important;
-  transition: background-color 0.3s;
+  -webkit-transition: background-color 0.3s;
+          transition: background-color 0.3s;
 }
 
 .promo {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 50% 70% no-repeat;
+  background:         linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
   background-image: url("../images/photo-1416453072034-c8dbfa2856b5.png");
   background-position: 50% 70%;
   background-repeat: no-repeat;
@@ -201,7 +206,8 @@ a:visited {
 
 .newsletter {
   padding: 66px 0 90px;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 50% 70% no-repeat;
+  background:         linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
   background-image: url("../images/photo-1428660386617-8d277e7deaf2.png");
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -241,7 +247,17 @@ a:visited {
   color: #f3f4f6 !important;
   font-size: 18px;
   font-weight: 400;
-  transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  &::-webkit-input-placeholder {
+    color: #f3f4f6;
+  }
+  &::-moz-placeholder {
+    color: #f3f4f6;
+  }
+  &:-ms-input-placeholder {
+    color: #f3f4f6;
+  }
   &::placeholder {
     color: #f3f4f6;
   }
@@ -251,6 +267,15 @@ a:visited {
   &:focus {
     border-color: #dd4b2b;
     outline: none;
+    &::-webkit-input-placeholder {
+      color: transparent;
+    }
+    &::-moz-placeholder {
+      color: transparent;
+    }
+    &:-ms-input-placeholder {
+      color: transparent;
+    }
     &::placeholder {
       color: transparent;
     }
@@ -341,7 +366,9 @@ a:visited {
 .footer {
   height: $footer-height;
   padding: 84px 0 232px;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+  50% 70% no-repeat;
+  background:         linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
   background-image: url("../images/photo-1428660386617-8d277e7deaf2.png");
   background-position: 50% 50%;
   background-repeat: no-repeat;

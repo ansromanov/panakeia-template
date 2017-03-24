@@ -41,7 +41,7 @@ a:visited {
   -webkit-transition-property: background-color, border-color, color;
   transition-property: background-color, border-color, color;
   -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s; }
+          transition-duration: 0.2s; }
   .main-button:hover {
     background-color: #dd4b2b;
     border-color: #d75d0e;
@@ -89,7 +89,7 @@ a:visited {
   transition: background-color 0.3s; }
 
 .promo {
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 50% 70% no-repeat;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
   background-image: url("../images/photo-1416453072034-c8dbfa2856b5.png");
   background-position: 50% 70%;
@@ -169,7 +169,7 @@ a:visited {
 
 .newsletter {
   padding: 66px 0 90px;
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 50% 70% no-repeat;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
   background-image: url("../images/photo-1428660386617-8d277e7deaf2.png");
   background-position: 50% 50%;
@@ -207,10 +207,8 @@ a:visited {
   font-size: 18px;
   font-weight: 400;
   -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s; }
+          transition-duration: 0.2s; }
   .signup-form__email::-webkit-input-placeholder {
-    color: #f3f4f6; }
-  .signup-form__email::-moz-placeholder {
     color: #f3f4f6; }
   .signup-form__email:-ms-input-placeholder {
     color: #f3f4f6; }
@@ -222,8 +220,6 @@ a:visited {
     border-color: #dd4b2b;
     outline: none; }
     .signup-form__email:focus::-webkit-input-placeholder {
-      color: transparent; }
-    .signup-form__email:focus::-moz-placeholder {
       color: transparent; }
     .signup-form__email:focus:-ms-input-placeholder {
       color: transparent; }
@@ -301,7 +297,7 @@ a:visited {
 .footer {
   height: 375px;
   padding: 84px 0 232px;
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 50% 70% no-repeat;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
   background-image: url("../images/photo-1428660386617-8d277e7deaf2.png");
   background-position: 50% 50%;
@@ -314,5 +310,4 @@ a:visited {
   font-size: 18px;
   font-weight: 100;
   line-height: 1.3; }
-
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=../templates/postcss/style.css.map */
