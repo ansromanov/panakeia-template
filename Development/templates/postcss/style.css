@@ -23,10 +23,10 @@ a:visited {
     display: block;
     height: 375px; }
 
-.container-fluid {
-  margin-left: 350px;
-  margin-right: 350px; }
-
+/*.container-fluid {
+  margin-left: $site-wrapper;
+  margin-right: $site-wrapper;
+}*/
 .main-button {
   height: 54px;
   border-style: solid;
@@ -85,8 +85,6 @@ a:visited {
   transition: background-color 0.3s; }
 
 .promo {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
-  background-image: url("../images/photo-1416453072034-c8dbfa2856b5.png");
   background-position: 50% 70%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -294,5 +292,11 @@ a:visited {
   font-size: 18px;
   font-weight: 100;
   line-height: 1.3; }
+
+@media screen and (min-width: 992px) {
+  width: 970px; }
+
+@media screen and (min-width: 1200px) {
+  width: 1170px; }
 
 /*# sourceMappingURL=style.css.map */

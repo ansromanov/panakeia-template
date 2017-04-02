@@ -23,10 +23,6 @@ a:visited {
     display: block;
     height: 375px; }
 
-.container-fluid {
-  margin-left: 350px;
-  margin-right: 350px; }
-
 .main-button {
   height: 54px;
   border-style: solid;
@@ -38,10 +34,8 @@ a:visited {
   font-size: 18px;
   font-weight: 400;
   line-height: 1.6;
-  -webkit-transition-property: background-color, border-color, color;
   transition-property: background-color, border-color, color;
-  -webkit-transition-duration: 0.2s;
-          transition-duration: 0.2s; }
+  transition-duration: 0.2s; }
   .main-button:hover {
     background-color: #dd4b2b;
     border-color: #d75d0e;
@@ -75,7 +69,6 @@ a:visited {
   font-weight: 400;
   color: #31353e !important;
   border-radius: 2em;
-  -webkit-transition: background-color 0s;
   transition: background-color 0s; }
   .site-navlist__item-link:hover {
     color: #dd4b2b !important; }
@@ -85,13 +78,10 @@ a:visited {
 .navbar-default .navbar-nav > .active > a:hover {
   color: #edeff1 !important;
   background-color: #dd4b2b !important;
-  -webkit-transition: background-color 0.3s;
   transition: background-color 0.3s; }
 
 .promo {
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
-  background-image: url("../images/photo-1416453072034-c8dbfa2856b5.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/photo-1416453072034-c8dbfa2856b5.png");
   background-position: 50% 70%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -140,7 +130,8 @@ a:visited {
   font-weight: 700; }
 
 .news-block {
-  margin-top: 70px; }
+  margin-top: 70px;
+  position: relative; }
 
 .news-block__header {
   margin-top: 35px;
@@ -159,7 +150,8 @@ a:visited {
   line-height: 2; }
 
 .news-block__main-button {
-  margin-top: 20px;
+  position: relative;
+  bottom: 0;
   padding-left: 50px;
   padding-right: 50px;
   color: #4e5159;
@@ -169,9 +161,7 @@ a:visited {
 
 .newsletter {
   padding: 66px 0 90px;
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
-  background-image: url("../images/photo-1428660386617-8d277e7deaf2.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/photo-1428660386617-8d277e7deaf2.png");
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -206,12 +196,7 @@ a:visited {
   color: #f3f4f6 !important;
   font-size: 18px;
   font-weight: 400;
-  -webkit-transition-duration: 0.2s;
-          transition-duration: 0.2s; }
-  .signup-form__email::-webkit-input-placeholder {
-    color: #f3f4f6; }
-  .signup-form__email:-ms-input-placeholder {
-    color: #f3f4f6; }
+  transition-duration: 0.2s; }
   .signup-form__email::placeholder {
     color: #f3f4f6; }
   .signup-form__email:hover {
@@ -219,10 +204,6 @@ a:visited {
   .signup-form__email:focus {
     border-color: #dd4b2b;
     outline: none; }
-    .signup-form__email:focus::-webkit-input-placeholder {
-      color: transparent; }
-    .signup-form__email:focus:-ms-input-placeholder {
-      color: transparent; }
     .signup-form__email:focus::placeholder {
       color: transparent; }
 
@@ -240,6 +221,10 @@ a:visited {
 
 .goods-block {
   margin-top: 20px; }
+
+.goods-block__image {
+  max-width: 100%;
+  max-height: auto; }
 
 .goods-block__header {
   padding-top: 55px;
@@ -297,9 +282,7 @@ a:visited {
 .footer {
   height: 375px;
   padding: 84px 0 232px;
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
-  background-image: url("../images/photo-1428660386617-8d277e7deaf2.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/photo-1428660386617-8d277e7deaf2.png");
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -310,4 +293,94 @@ a:visited {
   font-size: 18px;
   font-weight: 100;
   line-height: 1.3; }
-/*# sourceMappingURL=../templates/postcss/style.css.map */
+
+@media screen and (max-width: 992px) {
+  .site-wrapper {
+    margin-bottom: -25px; }
+    .site-wrapper:after {
+      height: 25px; }
+  .container {
+    max-width: 970px; }
+  .main-button {
+    width: 90%;
+    font-size: 24px; }
+  .site-nav {
+    height: 100px; }
+  .site-nav__logo {
+    margin-left: 0;
+    margin-right: 15px; }
+  .site-navlist__item-link {
+    padding-left: 10px !important;
+    padding-right: 10px !important; }
+  .promo,
+  .news,
+  .newsletter,
+  .goods,
+  .links {
+    padding-top: 30px;
+    padding-bottom: 50px; }
+  .promo-block {
+    margin-top: 50px; }
+  .promo-block__description {
+    font-size: 20px !important; }
+  .promo__main-button {
+    margin-top: 30px; }
+  .news-block {
+    position: relative; }
+  .news-block__image {
+    width: 100%;
+    border-radius: 10px; }
+  .news-textblock {
+    position: absolute;
+    left: 0;
+    top: 10%; }
+  .news-block__header {
+    color: #ffffff;
+    font-size: 45px; }
+  .news-block__description {
+    margin-top: 40px;
+    color: #ffffff;
+    font-size: 22px; }
+  .news-block__main-button {
+    margin-top: 40px; }
+  .footer {
+    height: 25px;
+    padding-bottom: 132px; } }
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .site-wrapper {
+    margin-bottom: -225px; }
+    .site-wrapper:after {
+      height: 225px; }
+  .container {
+    max-width: 1180px; }
+  .promo {
+    padding: 100px 0 80px 0; }
+  .promo-block {
+    margin-top: 60px; }
+  .news-block {
+    display: table;
+    overflow: hidden; }
+  .news-block__image {
+    display: table-cell;
+    width: 100%; }
+  .news-textblock {
+    display: table-cell;
+    width: 50%;
+    vertical-align: middle; }
+  .news-block__header {
+    margin-top: 0;
+    font-size: 30px; }
+  .news-block__description {
+    margin-top: 30px; }
+  .news-block__main-button {
+    margin-top: 20px; }
+  .footer {
+    height: 225px;
+    padding-bottom: 132px; } }
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1170px; } }
+
+/*# sourceMappingURL=style.css.map */

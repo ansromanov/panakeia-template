@@ -31,7 +31,7 @@ html(lang="en")
     .site-wrapper
       header.header
         nav.navbar.navbar-default.navbar-fixed-top.site-nav
-          .container-fluid
+          .container
             .navbar-header
               button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-main-navbar-collapse', aria-expanded='false')
                 span.sr-only Toggle navigation
@@ -54,50 +54,52 @@ html(lang="en")
                 li.site-navlist__item
                   a.site-navlist__item-link(href='#site-links') Placerat
       section.jumbotron.text-center.promo#site-promo
-        .container-fluid
+        .container
           h1.promo__header Integer at tortor ut magna
           h2.promo__header-bottom finibus lobortis sed quis tellus.
           .row
-            .col-lg-4
+            .col-sm-4
               article.promo-block
                 img.promo-block__image(src="images/promo-img1.png", alt="promo-image-1")
                 h3.promo-block__header Tincidunt
                 p.promo-block__description Phasellus arcu justo, ullamcorper non diam sit amet, luctus condimentum metus. Nullam tempus egestas efficitur. Sed quam dolor.
-            .col-lg-4
+            .col-sm-4
               article.promo-block
                 img.promo-block__image(src="images/promo-img2.png", alt="promo-image-2")
                 h3.promo-block__header Duis bibendum
                 p.promo-block__description Ut arcu arcu, faucibus eu risus blandit, pulvinar viverra justo. Phasellus arcu justo, ullamcorper non diam sit amet, luctus condimentum metus. In hac habitasse platea dictumst.
-            .col-lg-4
+            .col-sm-4
               article.promo-block
                 img.promo-block__image(src="images/promo-img3.png", alt="promo-image-3")
                 h3.promo-block__header Donec ligula
                 p.promo-block__description Nullam tempus egestas efficitur. Sed quam dolor, vulputate sed mattis et, sodales quis orci. Ut arcu arcu, faucibus eu risus blandit,.
           button.btn.btn-default.btn-lg.main-button.promo__main-button(type='button') Read more
       section.news#site-news
-        .container-fluid
+        .container
           h3.news__header Our news
           .row
-            .col-lg-4
-              article.news-block
-                img.news-block__image(src="images/news-img1.png", alt="news-image-1")
+            article.col-lg-4.clearfix.news-block
+              img.news-block__image(src="images/news-img1.png", alt="news-image-1")
+              section.news-textblock
                 h3.news-block__header Lorem ipsum
                 p.news-block__description Est a elit scelerisque vestibulum. Donec est sem, lobortis sit amet imperdiet vel, pretium lobortis erat. Nulla vitae hendrerit odio..
                 button.btn.btn-default.main-button.news-block__main-button(type='button') Read more
-            .col-lg-4
-              article.news-block
-                img.news-block__image(src="images/news-img2.png", alt="news-image-2")
+            article.col-lg-4.clearfix.news-block
+              img.news-block__image(src="images/news-img2.png", alt="news-image-2")
+              section.news-textblock
                 h3.news-block__header Lorem ipsum
-                p.news-block__description Est a elit scelerisque vestibulum. Donec est sem, lobortis sit amet imperdiet vel, pretium lobortis erat. Nulla vitae hendrerit odio.
+                p.news-block__description Est a elit scelerisque vestibulum. Donec est sem, lobortis sit amet imperdiet vel, pretium lobortis erat. Nulla vitae hendrerit odio..
+                
                 button.btn.btn-default.main-button.news-block__main-button(type='button') Read more
-            .col-lg-4
-              article.news-block
-                img.news-block__image(src="images/news-img3.png", alt="news-image-3")
+            article.col-lg-4.clearfix.news-block
+              img.news-block__image(src="images/news-img3.png", alt="news-image-3")
+              section.news-textblock
                 h3.news-block__header Lorem ipsum
-                p.news-block__description Est a elit scelerisque vestibulum. Donec est sem, lobortis sit amet imperdiet vel, pretium lobortis erat. Nulla vitae hendrerit odio.
+                p.news-block__description Est a elit scelerisque vestibulum. Donec est sem, lobortis sit amet imperdiet vel, pretium lobortis erat. Nulla vitae hendrerit odio..
                 button.btn.btn-default.main-button.news-block__main-button(type='button') Read more
+            
       section.text-center.newsletter#site-newsletter
-        .container-fluid
+        .container
           .col-lg-6.col-lg-offset-3
             h3.newsletter__header#aria-newsletter__header Newsletter
             p.newsletter__text Ut arcu arcu, faucibus eu risus blandit, pulvinar viverra justo. Phasellus arcu justo, ullamcorper non diam sit amet, luctus condimentum metus
@@ -107,31 +109,29 @@ html(lang="en")
                 //- span.input-group-btn.signup-form__submit
                 button.btn.btn-default.main-button.signup-form__main-button(type="submit") Sign up
       section.goods#site-goods
-        .container-fluid
+        .container
           article.goods-block
             .row
-              .col-lg-6
+              .col-md-6
                 h3.goods-block__header Ipsum dolor sit amet
                 p.goods-block__paragraph Nam accumsan nunc sit amet elementum sollicitudin. Integer vel lacus eget tortor lobortis tincidunt sed eu dolor. Phasellus cursus augue ac pulvinar cursus.
                 p.goods-block__paragraph Quisque ut erat ornare, feugiat turpis a, fringilla felis. Nulla molestie lorem et orci sagittis, et accumsan ex porta.
                 button.btn.btn-default.main-button.goods-block__main-button(type='button') Read more
-              .col-lg-6
-                aside.goods-block__image
-                img.goods-block__image(src="images/goods-img2.png", alt="goods-image-2")
+              .col-md-6
+                img.goods-block__image(src="images/goods-img2.png", alt="goods-image-2")  
           article.goods-block
             .row
-              .col-lg-6
-                aside.goods-block__image
-                  img.goods-block__image(src="images/goods-img2.png", alt="goods-image-2")
-              .col-lg-6
+              .col-md-6
+                img.goods-block__image(src="images/goods-img2.png", alt="goods-image-2")
+              .col-md-6
                 h3.goods-block__header Ipsum dolor sit amet
                 p.goods-block__paragraph Nam accumsan nunc sit amet elementum sollicitudin. Integer vel lacus eget tortor lobortis tincidunt sed eu dolor. Phasellus cursus augue ac pulvinar cursus.
                 p.goods-block__paragraph Quisque ut erat ornare, feugiat turpis a, fringilla felis. Nulla molestie lorem et orci sagittis, et accumsan ex porta.
                 button.btn.btn-default.main-button.goods-block__main-button.goods-block__main-button_blue(type='button') Read more
       section.links#site-links
-        .container-fluid
+        .container
           .row
-            .col-lg-4
+            .col-sm-4
               nav.links-block
                 ul
                   li.links-block__item
@@ -146,7 +146,7 @@ html(lang="en")
                     a.links-block__item-link(href="#") Himenaeos
                   li.links-block__item
                     a.links-block__item-link(href="#") In consectetur
-            .col-lg-4
+            .col-sm-4
               nav.links-block
                 ul
                   li.links-block__item
@@ -163,7 +163,7 @@ html(lang="en")
                     a.links-block__item-link(href="#") Nisi sed blandit
                   li.links-block__item
                     a.links-block__item-link(href="#") Tincidunt
-            .col-lg-4
+            .col-sm-4
               nav.links-block
                 ul
                   li.links-block__item

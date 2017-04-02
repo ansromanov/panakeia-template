@@ -12,7 +12,8 @@ module.exports = function (grunt) {
           expand: true,
           cwd: 'Development/templates/scss',
           src: '*.scss',
-          dest: 'Development/templates/postcss',
+          // dest: 'Development/templates/postcss',
+          dest: 'Development/css',
           ext: '.css'
         }]
       },
@@ -79,33 +80,12 @@ module.exports = function (grunt) {
     postcss: {
       dev: {
         options: {
-          map: {
-            inline: false,
-            annotation: 'Development/templates/postcss'
-          },
           processors: [
-            require('autoprefixer')(),
-            require('stylelint')()
           ],
         },
         dist: {
           src: 'Development/templates/postcss/style.css',
-          dest: 'Development/css/style.css',
-        }
-      },
-      prod: {
-        options: {
-          map: {
-            inline: false,
-            annotation: 'Development/templates/postcss'
-          },
-          processors: [
-            require('autoprefixer')()
-          ],
-        },
-        dist: {
-          src: 'Development/templates/postcss/style.css',
-          dest: 'Development/css/style.css',
+          dest: 'Development/css/style.css'
         }
       }
     },

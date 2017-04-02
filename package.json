@@ -21,9 +21,5 @@
     "imagemin-mozjpeg": "^6.0.0",
     "stylelint": "^7.9.0",
     "stylelint-config-standard": "^16.0.0"
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions"
-  ]
+  }
 }
